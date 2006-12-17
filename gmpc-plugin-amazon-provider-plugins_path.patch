@@ -1,0 +1,21 @@
+--- gmpccaa-0.1.0/src/Makefile.am.wig	2006-12-17 18:49:04.000000000 +0100
++++ gmpccaa-0.1.0/src/Makefile.am	2006-12-17 18:50:28.000000000 +0100
+@@ -1,7 +1,6 @@
+-#bin_PROGRAMS=osdplugin_la
+-libdir=${prefix}/share/gmpc/plugins/
++pluginsdir=$(libdir)/gmpc/
+ 
+-lib_LTLIBRARIES = caaplugin.la
++plugins_LTLIBRARIES = caaplugin.la
+ 
+ caaplugin_la_SOURCES=	\
+ 	plugin.c \
+@@ -14,8 +13,3 @@
+ 
+ EXTRA_DIST=		\
+ 	easy_download.h	
+-
+-install: 
+-	@$(MAKE)
+-	mkdir -p ${libdir}
+-	cp .libs/caaplugin.so ${libdir}

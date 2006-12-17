@@ -8,7 +8,7 @@ License:	GPL
 Group:		X11/Applications/Sound
 # http://sarine.nl/gmpc-plugins-downloads
 Source0:	%{source_name}-%{version}.tar.gz
-# Source0-md5:	046ed7e57fac849d3b33a5b37ff7540e
+# Source0-md5:	f55ae657b4664d393d9058d4d06e1d2b
 Patch0:		%{name}-plugins_path.patch
 Patch1:		%{name}-curl.patch
 URL:		http://sarine.nl/amazon-provider

@@ -1,6 +1,6 @@
-#
 %define		source_name gmpccaa
 Summary:	Amazon provider plugin for Gnome Music Player Client
+Summary(pl):	Wtyczka udostêpniaj±ca dane z Amazona dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-amazon-provider
 Version:	0.1.0
 Release:	1
@@ -16,13 +16,16 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	curl-devel
 BuildRequires:	gmpc-devel
-BuildRequires:	gtk+2-devel >= 2.4
+BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libglade2-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This plugin fetches cover art, and album information from amazon.
+This plugin fetches cover art, and album information from Amazon.
+
+%description -l pl
+Ta wtyczka pobiera ok³adkê oraz informacje o albumie z Amazona.
 
 %prep
 %setup -qn %{source_name}-%{version}
@@ -41,14 +44,12 @@ This plugin fetches cover art, and album information from amazon.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_libdir}/gmpc
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 rm $RPM_BUILD_ROOT%{_libdir}/gmpc/*.la
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT

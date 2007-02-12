@@ -1,6 +1,6 @@
 %define		source_name gmpccaa
 Summary:	Amazon provider plugin for Gnome Music Player Client
-Summary(pl.UTF-8):   Wtyczka udostępniająca dane z Amazona dla odtwarzacza Gnome Music Player Client
+Summary(pl.UTF-8):	Wtyczka udostępniająca dane z Amazona dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-amazon-provider
 Version:	0.1.0
 Release:	1

@@ -1,21 +1,19 @@
-%define		source_name gmpccaa
+%define		source_name gmpc-coveramazon
 Summary:	Amazon provider plugin for Gnome Music Player Client
 Summary(pl.UTF-8):	Wtyczka udostępniająca dane z Amazona dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-amazon-provider
-Version:	0.1.0
+Version:	0.14.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 # http://sarine.nl/gmpc-plugins-downloads
 Source0:	%{source_name}-%{version}.tar.gz
-# Source0-md5:	f55ae657b4664d393d9058d4d06e1d2b
+# Source0-md5:	b2488bab5c70875b7a1ef7ec9f437670
 Patch0:		%{name}-plugins_path.patch
-Patch1:		%{name}-curl.patch
-URL:		http://sarine.nl/amazon-provider
+URL:		http://gmpc.sarine.nl/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	curl-devel
-BuildRequires:	gmpc-devel
+BuildRequires:	gmpc-devel >= 0.14.0
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	libglade2-devel
 BuildRequires:	libtool
@@ -30,7 +28,6 @@ Ta wtyczka pobiera okładkę oraz informacje o albumie z Amazona.
 %prep
 %setup -qn %{source_name}-%{version}
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__libtoolize}

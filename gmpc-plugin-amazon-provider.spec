@@ -6,8 +6,7 @@ Version:	0.15.5.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-# http://download.sarine.nl/gmpc-0.15.5/
-Source0:	%{source_name}-%{version}.tar.gz
+Source0:	http://download.sarine.nl/gmpc-0.15.5/%{source_name}-%{version}.tar.gz
 # Source0-md5:	9471fe2ec7ae5ff04c855ef95c1744fc
 Patch0:		%{name}-plugins_path.patch
 URL:		http://www.sarine.nl/amazon-provider

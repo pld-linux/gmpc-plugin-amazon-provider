@@ -2,18 +2,18 @@
 Summary:	Amazon provider plugin for Gnome Music Player Client
 Summary(pl.UTF-8):	Wtyczka udostępniająca dane z Amazona dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-amazon-provider
-Version:	0.18.0
+Version:	0.18.100
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
-# Source0-md5:	c244bff7f3490801c08ba6f6b80fe1a3
-URL:		http://www.sarine.nl/amazon-provider
+# Source0-md5:	e931181300503930df03d22a64e3ae91
+URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_COVERAMAZON
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
-BuildRequires:	gmpc-devel >= 0.18.0
+BuildRequires:	gmpc-devel >= 0.18.100
 BuildRequires:	gtk+2-devel >= 2:2.4
-BuildRequires:	libmpd-devel >= 0.18.0
+BuildRequires:	libmpd-devel >= 0.18.100
 BuildRequires:	libxml2-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig

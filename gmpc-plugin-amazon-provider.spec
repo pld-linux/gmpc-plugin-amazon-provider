@@ -11,9 +11,10 @@ Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
 URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_COVERAMAZON
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gmpc-devel >= 0.18.100
 BuildRequires:	gtk+2-devel >= 2:2.4
-BuildRequires:	libmpd-devel >= 0.18.100
+BuildRequires:	intltool
 BuildRequires:	libxml2-devel >= 2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
